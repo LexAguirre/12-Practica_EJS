@@ -48,19 +48,17 @@ EJEMPLO: Si el numero recibido en la ruta, es impar n=5, imprimiremos n=5 elemen
 
 10. Despues de la linea cuatro se inserta el codigo con el que se espesifica la app de express y su engine ejs
 
-11. Ahora se crea una carpeta al nivel de public la cual se llamara Views y dentro de esta se creara un archivo llamado index.ejs
+11. Ahora se crea una carpeta al nivel de public la cual se llamara Views y dentro de esta se creara un archivo llamado numbers.ejs
 
 12. Ahora se ingresa el codigo igual como se realiza en html.
 
-13. Ahora crea un archivo llamado person.ejs en la carpeta views pero dentro de este archivo se debe ingresar en el body como un titulo <h1> el codigo Person: <%= ID %>
+13. Pero dejeremos ejecutar scripts de JS para poder realizar el ejercicio para hacerlo deberemos utilizar <% %> esa sentencia y dentro de ella colocar los scripts para que lo pueda ejecutar desde el ejs
 
-14. Regresando al app.js en la ruta raiz se colocara .render en lugar de .send y entre parentesis index
+14. Regresando al app.js en la ruta numbers colocaremos res.render("numbers", { number: req.params.id }); para que tome el numero y lo mande
 
-15. En la ruta person cambiaremos el interior de la funcion por res.render("person", { ID: req.params.id });w
+15. Ahora se ejecuta el comando "nodemon app” en la terminal y acccede a localhost:3000/numbers/6 para observar el resultado
 
-16. Ahora se ejecuta el comando "nodemon app” en la terminal y acccede a localhost:3000 para observar el resultado
-
-17. Ahora se cambia el orden de los route handler del de person y api, ademas en el navegador observa el codigo fuente para poder observar lo impreso
+16. tambien se puede observar el resultado con un numero impar
 
 ## RECURSOS
 
