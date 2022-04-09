@@ -1,6 +1,6 @@
 ![Logo](img/ucol-logo.jpg)
 
-# Práctica 11: Contenido estático
+# Práctica 12: EJS
 
 > Segunda Parcial
 
@@ -13,16 +13,29 @@
 
 ## OBJETIVO
 
-- Nodemon server
-- Express module
-- EJS
+Recibir un párametro numêrico desde la ruta /numbers/:id
+En la vista (archivo EJS) determinar si el numero es par/impar
+Si es par, imprimir una lista desordenada con n*2 elementos,
+EJEMPLO: Si el numero recibido en la ruta, es par n=2, imprimiremos n*2=4 elementos
+
+- <ul>
+- <li> ES PAR </li
+- <li> ES PAR </li>
+- <li> ES PAR </li>
+- <li> ES PAR </li>
+- </ul>
+
+EJEMPLO: Si el numero recibido en la ruta, es impar n=5, imprimiremos n=5 elementos
+
+- <ul>
+- <li> ES IMPAR </li>
+- <li> ES IMPAR </li>
+- <li> ES IMPAR </li>
+- <li> ES IMPAR </li>
+- <li> ES IMPAR </li>
+- </ul>
 
 > ENTREGA: Sabado 9 DE ABRIL DEL 2022
-
-## INFORMACIÓN ADICIONAL
-
-Una forma de enviar información que se genera en los “route handlers” de nuestra app, hacia el “front end” es mediante un template engine. Express permite “conectar” una cantidad considerable de “templates engines” a nuestra aplicación de Express.
-Uno de los “template engines” más populares es “EJS”.
 
 ## EXPLICACIÓN DEL PROCESO
 

@@ -20,6 +20,6 @@ app.get("/person/:id", function (req, res) {
 
 app.get("/numbers/:id", function (req, res) {
   res.render("numbers", { number: req.params.id });
-});
+}); // Con esta función Estaremos recibiendo numeros para mandarlos al archivo numbers.ejs
 
 app.listen(port);
